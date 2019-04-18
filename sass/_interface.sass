@@ -1,7 +1,15 @@
 body 
     +light
     color: $text-color
-
+.section    
+    padding: 100px 0 
+    &-title
+        font-size: 30px 
+        text-align: center
+        text-transform: uppercase
+        +bold
+    &__title
+        margin: 100px
 .button-o
     background-color: white
     border: 2px solid $primary
@@ -19,7 +27,34 @@ body
     background-color: $primary
     color: #fff
     +bold
-
+.bg-secondary
+    background: $bg-secondary
+.input 
+    height: 80px
+    padding-left: 30px
+    border: 1px solid #dddddd
+input[type="checkbox"]
+    display: none
+    &:checked + label:before
+        background-color: $primary 
+.checkbox
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 40px
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            display: inline-block
+            width: 30px
+            height: 30px
+            border: 1px solid #dddddd 
+            margin-right: 20px    
 @media (max-width: 576px)
     .button-o
         font-size: 10px
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 20px 
