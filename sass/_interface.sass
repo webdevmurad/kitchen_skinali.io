@@ -1,7 +1,17 @@
 body 
     +light
     color: $text-color
-
+img 
+    max-width: 100%
+.section    
+    padding: 100px 0 
+    &-title
+        font-size: 30px 
+        text-align: center
+        text-transform: uppercase
+        +bold
+    &__title
+        margin: 100px
 .button-o
     background-color: white
     border: 2px solid $primary
@@ -11,15 +21,59 @@ body
     color: $primary
     +bold
     cursor: pointer
-
+    text-decoration: none
 .button 
     border: none
     text-transform: uppercase
     padding: 25px 45px 
     background-color: $primary
     color: #fff
+    text-decoration: none
     +bold
+    &:hover
+        cursor: pointer
+    &-fitting
+        color: $primary
+        background-color: #fff
+    &-add
+        background-color: lighten($primary, 10%)
+        color: #fff
+    &-like
+        background-color: $primary
+        height: 30px
+        width: 30px
+        border: none
 
+.bg-secondary
+    background: $bg-secondary
+.input 
+    height: 80px
+    padding-left: 30px
+    border: 1px solid #dddddd
+input[type="checkbox"]
+    display: none
+    &:checked + label:before
+        background-color: $primary 
+.checkbox
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 40px
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            display: inline-block
+            width: 30px
+            height: 30px
+            border: 1px solid #dddddd 
+            margin-right: 20px    
 @media (max-width: 576px)
-    .button-o
+    .button
         font-size: 10px
+        &-o
+            font-size: 10px
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 20px 
