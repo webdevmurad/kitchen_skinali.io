@@ -1,11 +1,15 @@
 .offer
     padding: 129px 0
     &-block
-        background: #fff url('../img/form/form-bg.png') no-repeat center right
-        background-size: contain
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
         padding: 80px
         margin-top: -200px
+        &_calc-bg
+            background: #fff url('../img/form/form-bg-calc.png') no-repeat center right
+            background-size: contain
+        &_price-bg
+            background: #fff url('../img/form/form-bg-price.png') no-repeat center right
+            background-size: contain
     &__title
         font-size: 25px
         text-transform: uppercase
@@ -15,12 +19,13 @@
         display: block
         font-size: 21px
         margin-bottom: 48px
+        max-width: 820px
 .form
     &__row
         display: flex
         align-items: center
         max-width: 900px
-        margin-bottom: 25px
+        margin-bottom: 30px
         &:last-child
             margin-bottom: 0
     &__label
@@ -37,19 +42,27 @@
     &__button 
         height: 80px
         width: 100%
+    &__policy
+        display: inline-block
+        margin-left: 45px
+        
 
 @media (max-width: 1199px) 
     .offer
         &-block
             background-position: center right -120px
+@media (max-width: 991px)
+    .offer
+        &-block
+            background: none
+            background-color: #fff
+            padding: 40px
 @media (max-width: 768px)
     .checkbox
         &-label
             margin-right: 10px
     .offer
-        &-block
-            background: none
-            background-color: #fff
+        &-block    
             padding: 40px
         &__title
             font-size: 18px
@@ -65,6 +78,9 @@
             width: 100%
         &__input
             margin-bottom: 20px
+        &__policy
+            margin-left: 0
+            margin-top: 30px
         &__button
             padding: 0
             width: 100%
