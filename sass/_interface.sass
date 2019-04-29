@@ -54,6 +54,43 @@ input[type="checkbox"]
     display: none
     &:checked + label:before
         background-color: $primary 
+.select
+    height: 80px
+    width: 100%
+    border: 1px solid #dddddd
+    position: relative
+    &:after 
+        content: ''
+        position: absolute
+        z-index: 9
+        top: 50%
+        transform: translateY(-50%)
+        right: 20px
+        width: 20px
+        height: 20px
+        background: url('../img/arrow_down.png') no-repeat center
+        background-size: 100%
+    &:hover
+        cursor: pointer
+    &_checked
+        line-height: 80px
+        padding-left: 30px
+    &__dropdown
+        position: absolute 
+        top: 80px
+        width: 100%
+        background-color: #ffffff
+        border: 1px solid #dddddd
+        margin: 0
+        list-style: none
+        padding: 0
+        display: block
+        &_open
+            display: none
+    &__option
+        padding: 20px
+        &:hover
+            background-color: $bg-secondary
 .checkbox
     &-label
         display: flex
