@@ -1,0 +1,26 @@
+{
+  "name": "skinali",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdevmurad/Sait__SKINALI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdevmurad/Sait__SKINALI/issues"
+  },
+  "homepage": "https://github.com/webdevmurad/Sait__SKINALI#readme",
+  "dependencies": {
+    "gulp-tinypng-compress": "^1.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.1"
+  }
+}
